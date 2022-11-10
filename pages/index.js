@@ -32,6 +32,7 @@ const StyledHeader = styled.div`
         width: 80px;
         height: 80px;
         border-radius: 50%;
+        border: 2px solid #000;
     }
 
     .user-info {
@@ -40,13 +41,13 @@ const StyledHeader = styled.div`
         width: 100%;
         padding: 16px 32px;
         gap: 16px;
+        border-bottom: 1px solid #c8c8c8;
     }
 `;
 const StyledBanner = styled.div`
-    background-color: blue;
     background-image: url(${({ bg }) => bg});
     /* background-image: url(${config.bg}); */
-    height: 230px;
+    height: 300px;
 `;
 
 function Header() {
