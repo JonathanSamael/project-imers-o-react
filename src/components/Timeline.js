@@ -5,23 +5,22 @@ export const StyledTimeline = styled.div`
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #3b0032 #ffffff;
+    scrollbar-color: ${({ theme }) => theme.textColorBase};
   }
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 16px;
-    height: 10px;
+    height: 8px;
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: ${({ theme }) => theme.backgroundBase};
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #3b0032;
+    background-color: ${({ theme }) => theme.borderBase};
     border-radius: 10px;
-    border: 1px solid #ffffff;
   }
 
   flex: 1;
