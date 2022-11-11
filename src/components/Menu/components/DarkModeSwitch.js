@@ -16,7 +16,7 @@ const StyledSwitch = styled.div`
   label {
     width: 50px;
   }
-  span { display: inline-flex; width: 20px; height: 20px; align-items: center; justify-content: center; }
+  span { display: inline-flex; width: 22px; height: 16px; align-items: center; justify-content: space-evenly; }
   
   label:before {
     content: "";
